@@ -1,0 +1,56 @@
+<h3>Труба - масса, площадь и объем</h3>
+
+<form>
+    <label>Диаметр трубы, мм</label>
+    <input class="w3-input w3-border" type="number" ng-model="diam" placeholder="диаметр">
+    <label>Толщина стенки трубы, мм</label>
+    <input class="w3-input w3-border" type="number" ng-model="stenka" placeholder="толщина">
+    <label>Длина трубы, м</label>
+    <input class="w3-input w3-border" type="number" ng-model="dlina" placeholder="длина">
+    <label>Тип трубы</label>
+	<p>
+	<input class="w3-radio" type="radio" ng-model="shov" value=1>
+	<label class="w3-validate">Бесшовная (100%)</label>
+	<p>
+	<input class="w3-radio" type="radio" ng-model="shov" value=1.01>
+	<label class="w3-validate">Одношовная (101%)</label>
+	<p>
+	<input class="w3-radio" type="radio" ng-model="shov" value=1.015>
+	<label class="w3-validate">Двухшовная (101.5%)</label>
+	<p>
+    <label>Точность вывода результатов (знаки после запятой)</label>
+    <input class="w3-input w3-border" type="number" ng-model="tochnost" placeholder="точность">
+</form>
+
+<br>
+
+<table class="w3-table w3-bordered w3-striped">
+  <tr>
+    <td>Масса 1м трубы, кг</td>
+    <td>{{ massa_1m }}</td>
+  </tr>
+  <tr>
+    <td>Масса трубы, кг</td>
+    <td>{{ massa }}</td>
+  </tr>
+  <tr>
+    <td>Длина внешней окружности трубы, мм</td>
+    <td>{{ okr_vnesh }}</td>
+  </tr>
+  <tr>
+    <td>Длина внутренней окружности трубы, мм</td>
+    <td>{{ okr_vnutr }}</td>
+  </tr>
+  <tr>
+    <td>Площадь поверхности трубы, м2</td>
+    <td>{{ ploshad }}</td>
+  </tr>
+  <tr>
+    <td>Объем трубы, м3</td>
+    <td>{{ ob_trub }}</td>
+  </tr>
+  <tr>
+    <td>Объем полости трубы, м3</td>
+    <td>{{ ob_polost }}</td>
+  </tr>
+</table>

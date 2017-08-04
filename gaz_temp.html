@@ -1,0 +1,24 @@
+<h3>Температура газа в точке х</h3>
+
+<form>
+    <label>Температура газа на выходе из КС-1, град С</label>
+    <input class="w3-input w3-border" type="number" ng-model="t1" placeholder="давление1">
+    <label>Температура газа на входе в КС-2, град С</label>
+    <input class="w3-input w3-border" type="number" ng-model="t2" placeholder="давление2">
+    <label>Расстояние между КС-1 и КС-2, км</label>
+    <input class="w3-input w3-border" type="number" ng-model="L" placeholder="расстояние1">
+    <label>Расстояние от КС-1 до точки х, км</label>
+    <input class="w3-input w3-border" type="number" ng-model="x" placeholder="расстояние2">
+    <label>Точность вывода результатов (знаки после запятой)</label>
+    <input class="w3-input w3-border" type="number" ng-model="tochnost" placeholder="точность">
+</form>
+
+<br>
+
+<table class="w3-table w3-bordered w3-striped">
+  <tr>
+    <td>Температура газа в точке х, град С</td>
+    <td>{{ tx }}</td>
+  </tr>
+</table>
+<img src="pic/gaz_temp.png" border="0">

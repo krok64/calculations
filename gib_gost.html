@@ -1,0 +1,50 @@
+<h3>Гибка труб по ГОСТ 24950-81 (холодное гнутье)</h3>
+
+<form>
+    <label>Диаметр трубы, мм</label>
+	<select ng-model="diam" ng-options="x for (x, y) in p_param"></select>
+	<br>
+    <label>Угол гибки, градус</label>
+    <input class="w3-input w3-border" type="number" ng-model="ugol" placeholder="толщина">
+    <label>Количество секций</label>
+    <input class="w3-input w3-border" type="number" ng-model="sekcii" placeholder="длина">
+    <label ng-hide="mySwitch">Угол последней секции, градус</label>
+    <input ng-hide="mySwitch" class="w3-input w3-border" type="number" ng-model="last_ugol" placeholder="длина">
+    <label>Точность вывода результатов (знаки после запятой):</label>
+    <input class="w3-input w3-border" type="number" ng-model="tochnost" placeholder="точность">
+</form>
+
+<br>
+
+<table class="w3-table w3-bordered w3-striped">
+  <tr>
+    <td>Тангенс слева Т1, м</td>
+    <td>{{ T1 }}</td>
+  </tr>
+  <tr>
+    <td>Тангенс справа Т2, м</td>
+    <td>{{ T2 }}</td>
+  </tr>
+  <tr>
+    <td>Биссектриса угла, м</td>
+    <td>{{ Bis }}</td>
+  </tr>
+  <tr>
+    <td>Радиус гибки, м</td>
+    <td>{{ Rad }}</td>
+  </tr>
+  <tr>
+    <td>Максимальный угол гибки, градус</td>
+    <td>{{ Max_grad }}</td>
+  </tr>
+  <tr>
+    <td>Длина трубы, м</td>
+    <td>{{ truba }}</td>
+  </tr>
+</table>
+
+<div class="w3-panel w3-pale-yellow w3-leftbar w3-border-yellow">
+<h3>Внимание!</h3>
+<p>Действующая в ОАО Газпром нормативная техничекая документация не предусматривает возможности применения 
+холодногнутых отводов из труб, сваренных токами высокой частоты (труб ТВЧ).</p>
+</div>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="base.css"/>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+<meta charset="utf-8">
+<style>
+select {
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+</style>
+
+<body ng-app="myApp">
+
+<nav class="w3-sidenav w3-border" style="width:25%">
+  <a class="w3-border-bottom" href="#/">Труба: параметры</a> 
+  <a class="w3-border-bottom" href="#gib_gost">Гибка труб по ГОСТ 24950-81</a> 
+  <a class="w3-border-bottom" href="#area_det">Площадь поверхности отвода</a> 
+  <a class="w3-border-bottom" href="#area_troy">Площадь поверхности тройника</a> 
+  <a class="w3-border-bottom" href="#area_per">Площадь поверхности перехода</a> 
+  <a class="w3-border-bottom" href="#area_zagl">Площадь поверхности заглушки</a> 
+  <a class="w3-border-bottom" href="#gaz_pressure">Давление газа в точке х</a> 
+  <a class="w3-border-bottom" href="#gaz_temp">Температура газа в точке х</a> 
+  <a class="w3-border-bottom" href="#massa_prokl">Масса прокладки по ГОСТ Р 53561-2009</a> 
+</nav>
+
+<div style="margin-left:25%" class="w3-container ng-view">
+</div>
+
+<script src= "myUsers.js"></script>
+
+</body>
+</html>
+

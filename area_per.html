@@ -1,0 +1,22 @@
+<h3>Площадь поверхности перехода</h3>
+
+<form>
+    <label>Диаметр перехода (D), мм</label>
+    <input class="w3-input w3-border" type="number" ng-model="diam" placeholder="диаметр">
+    <label>Диаметр перехода (D1), мм</label>
+    <input class="w3-input w3-border" type="number" ng-model="diam2" placeholder="диаметр2">
+    <label>Высота перехода (L), мм</label>
+    <input class="w3-input w3-border" type="number" ng-model="visota" placeholder="высота">
+    <label>Точность вывода результатов (знаки после запятой)</label>
+    <input class="w3-input w3-border" type="number" ng-model="tochnost" placeholder="точность">
+</form>
+
+<br>
+
+<table class="w3-table w3-bordered w3-striped">
+  <tr>
+    <td>Площадь поверхности перехода, м2</td>
+    <td>{{ area }}</td>
+  </tr>
+</table>
+<img src="pic/perehod.png" border="0">
